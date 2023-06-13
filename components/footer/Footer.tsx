@@ -29,7 +29,7 @@ function Footer({}: Props) {
   const currentYear = new Date().getFullYear();
   return (
     <div className=" w-full">
-      <footer className="relative md:bg-red-300 w-full mx-auto  max-w-screen-2xl p-4 md:px-6 md:py-6 ">
+      <footer className="relative  w-full mx-auto  max-w-screen-2xl p-4 md:px-6 md:py-6 ">
         <div className="w-full">
           <div className="md:grid grid-cols-1  md:gap-4 md:grid-cols-2">
             <div className="py-6 space-y-4 max-w-prose">
