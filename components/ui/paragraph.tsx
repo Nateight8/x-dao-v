@@ -2,10 +2,10 @@ import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import { HTMLAttributes, forwardRef } from "react";
 
-const pVariants = cva(" tracking-wide font-inter font-normal text-primary", {
+const pVariants = cva(" tracking-wide font-inter font-normal text-gray-400", {
   variants: {
     size: {
-      default: "text-lg",
+      default: "text-base sm:text-lg",
       large: "text-xl",
     },
   },

@@ -2,19 +2,16 @@ import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import { HTMLAttributes, forwardRef } from "react";
 
-const h2Variants = cva(
-  "capitalize font-inter font-normal text-[#32323D] pb-4",
-  {
-    variants: {
-      size: {
-        default: "text-3xl",
-      },
+const h2Variants = cva(" font-heading text-slate-100", {
+  variants: {
+    size: {
+      default: "text-xl",
     },
-    defaultVariants: {
-      size: "default",
-    },
-  }
-);
+  },
+  defaultVariants: {
+    size: "default",
+  },
+});
 
 interface H2Heading
   extends HTMLAttributes<HTMLHeadingElement>,
@@ -30,6 +27,6 @@ const H2 = forwardRef<HTMLHeadingElement, H2Heading>(
   }
 );
 
-H2.displayName = "H2";
+H2.displayName = "H1";
 
 export { H2, h2Variants };

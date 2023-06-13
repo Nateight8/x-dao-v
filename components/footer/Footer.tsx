@@ -3,49 +3,28 @@ import { P } from "../ui/paragraph";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { Separator } from "../ui/separator";
+import { H2 } from "../ui/h2";
+import { H3 } from "../ui/h3";
 
 type Props = {};
 
 function Footer({}: Props) {
-  const siteMap = [
-    {
-      title: "X DAO",
-      links: ["About Us", "FAQ", "Our Team", "Projects"],
-      id: "sassda",
-    },
-
-    {
-      title: "Resources",
-      links: ["Blog", "Newsletter", "Medium"],
-      id: "sada",
-    },
-    {
-      title: "Socials",
-      links: ["Twitter", "Discord", ""],
-      id: "s",
-    },
-  ];
-
   const currentYear = new Date().getFullYear();
   return (
     <div className=" w-full">
       <footer className="relative  w-full mx-auto  max-w-screen-2xl p-4 md:px-6 md:py-6 ">
         <div className="w-full">
           <div className="md:grid grid-cols-1  md:gap-4 md:grid-cols-2">
-            <div className="py-6 space-y-4 max-w-prose">
-              <P size="large">DAO LOGO</P>
-              <P className="text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat delectus nostrum quos distinctio et quasi explicabo eos
-                blanditiis quas deleniti corporis est laboriosam iusto, quam
-                architecto cumque. In, consectetur quam?
+            <div className="py-6 space-y-4 max-w-sm">
+              <H2 className=" ">DAO LOGO</H2>
+              <P>
+                Unlocking wealth for all, together. Join VentureX DAO and
+                unleash your financial potential
               </P>
             </div>
-            <div className="grid py-6  md:p-6 col-span-2 col-start-2 md:grid-cols-2 lg:grid-cols-3 justify-between gap-4">
+            <div className="grid py-6  md:p-6 col-span-2 col-start-2 md:grid-cols-2 lg:grid-cols-3 justify-between gap-6">
               <div className="w-full">
-                <P size="large" className="mb-4">
-                  X DAO
-                </P>
+                <H3 className="mb-4">X DAO</H3>
                 <ul>
                   {["About Us", "FAQ", "Our Team", "Projects"].map((link) => (
                     <li key={link}>
@@ -63,9 +42,7 @@ function Footer({}: Props) {
                 </ul>
               </div>
               <div className="">
-                <P size="large" className="mb-4">
-                  Resources
-                </P>
+                <H3 className="mb-4">Resources</H3>
                 <ul>
                   {["Blog", "Newsletter", "Medium"].map((link) => (
                     <li key={link}>
@@ -83,9 +60,7 @@ function Footer({}: Props) {
                 </ul>
               </div>
               <div className="hidden lg:block">
-                <P size="large" className="mb-4">
-                  Socials
-                </P>
+                <H3 className="mb-4">Socials</H3>
                 <ul>
                   {["Twitter", "Discord"].map((link) => (
                     <li key={link}>
