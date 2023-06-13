@@ -5,7 +5,7 @@ import { HTMLAttributes, forwardRef } from "react";
 const pVariants = cva(" tracking-wide font-inter font-normal text-gray-400", {
   variants: {
     size: {
-      default: "text-base sm:text-lg",
+      default: "text-lg",
       large: "text-xl",
     },
   },

@@ -10,7 +10,7 @@ function Hero({}: Props) {
   return (
     <div className="min-h-[90vh] w-full flex items-center mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6">
       <div className="">
-        <H1>VentureX DAO</H1>
+        <H1 className="mb-3">VentureX DAO</H1>
         <P className=" max-w-3xl ">
           Embark on a transformative journey with VentureX DAO, where we believe
           that true financial empowerment is a collective endeavor. Join our
