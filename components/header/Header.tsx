@@ -21,7 +21,7 @@ const Header = (props: Props) => {
               <Navlinks />
             </div>
 
-            <Button className="hidden lg:block" variant="ghost">
+            <Button className="hidden lg:block leading-[0]" variant="ghost">
               Connect
             </Button>
           </div>
@@ -66,7 +66,7 @@ function Navlinks() {
             style={
               pathname === link.url
                 ? { color: "white" }
-                : { color: "rgba(225, 224, 232, 0.4);" }
+                : { color: "rgba(225, 224, 232, 0.4)" }
             }
             className={buttonVariants({ variant: "link" })}
             href={link.url}
