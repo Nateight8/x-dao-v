@@ -28,7 +28,7 @@ const Header = (props: Props) => {
             </Button>
           </div>
           <div className="flex lg:hidden items-center justify-between relative">
-            <H2>VentureX DAO </H2>
+            <H2 className="">VX DAO </H2>
 
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>

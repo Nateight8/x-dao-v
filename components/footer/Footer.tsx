@@ -83,7 +83,7 @@ function Footer({}: Props) {
         <Separator />
         <div className=" flex w-full  items-center  py-4 justify-between">
           <div>
-            <span className="block text-sm text-[#d6d3d1] text-center font-inter ">
+            <span className="block text-lg text-[#d6d3d1] text-center font-inter ">
               © 2023
             </span>
           </div>
