@@ -59,7 +59,7 @@ function Tokenomics({}: Props) {
 
   return (
     <>
-      <div className="bg-[#26042f] w-full  ">
+      <div className="bg-[#201e29] w-full  ">
         <div className="grid p-6  md:grid-cols-3 min-h-[40vh] gap-4 mx-auto max-w-screen-2xl md:p-4 md:px-6 md:py-6">
           {tiles.map((tile) => (
             <div
