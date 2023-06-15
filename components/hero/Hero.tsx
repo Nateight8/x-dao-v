@@ -11,14 +11,16 @@ type Props = {};
 function Hero({}: Props) {
   return (
     <>
-      <div className="min-h-[90vh] w-full flex items-center justify-center mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6">
-        <div className="space space-y-6">
-          <H1 className="mb-3 text-center">Revolutionalize your investment</H1>
-          <P className=" max-w-3xl text-center ">
+      <div className=" w-full min-h-screen flex items-center justify-center mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6">
+        <div className="space-y-3 md:space-y-6 py-20 flex justify-center flex-col">
+          <H1 className="md:mb-3 text-center">
+            Revolutionalize your investment
+          </H1>
+          <P className=" max-w-3xl mx-auto text-center ">
             Join the movement and shape the future of venture capitalist through
             community driven togetherness with $XDAO tokens.
           </P>
-          <div className="grid sm:px-6 sm:grid-cols-2 gap-4">
+          <div className="grid sm:px-6 sm:grid-cols-2 gap-4 py-6">
             <m.button
               // whileHover={{ background: "" }}
               className={buttonVariants({
