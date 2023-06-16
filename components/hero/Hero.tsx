@@ -43,9 +43,9 @@ export default Hero;
 
 function Tokenomics({}: Props) {
   const tiles = [
-    { id: "sa", amount: "2000", label: "Tokens" },
-    { id: "aa", amount: "$ 4000", label: "Total Raised" },
-    { id: "5s", amount: "12000", label: "Community Members" },
+    { id: "sa", amount: "500M", label: "Total Supply" },
+    { id: "aa", amount: "$ 4000", label: "Treasury" },
+    { id: "5s", amount: "12000", label: "Total Staked" },
   ];
 
   const [count, setcount] = useState(0);
@@ -60,7 +60,7 @@ function Tokenomics({}: Props) {
   return (
     <>
       <div className="bg-[#201e29] w-full  ">
-        <div className="grid p-6  md:grid-cols-3 min-h-[40vh] gap-4 mx-auto max-w-screen-2xl md:p-4 md:px-6 md:py-6">
+        <div className="grid p-6  md:grid-cols-3 min-h-[15vh] gap-4 mx-auto max-w-screen-2xl md:p-4 md:px-6 md:py-6">
           {tiles.map((tile) => (
             <div
               key={tile.id}
