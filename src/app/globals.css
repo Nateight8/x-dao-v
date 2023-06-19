@@ -37,8 +37,9 @@
   }
  
   ::selection{
-    background: #ffffff;
+    background: #e1e7ef;
     color: #16141d;
+    
   }
   :root {
     --background: #16141d;
@@ -62,7 +63,7 @@
     --secondary: 222.2 47.4% 11.2%;
     --secondary-foreground: 210 40% 98%;
  
-    --accent: 216 34% 17%;
+    --accent: 33 81% 48%;
     --accent-foreground: 210 40% 98%;
  
     --destructive: 0 63% 31%;

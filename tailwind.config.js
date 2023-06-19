@@ -17,6 +17,14 @@ module.exports = {
     extend: {
       fontFamily: {
         heading: "var(--heading)",
+        "heading-two": "var(--heading-two)",
+      },
+      backgroundImage: {
+        "radial-gradient-default":
+          "radial-gradient(202.04% 202.04% at 50% 111.22%, rgba(255, 254, 241, 0.2) 0%, rgba(120, 120, 120, 0.2) 23.95%)",
+
+        // "radial-gradient-secondary":
+        //   "radial-gradient(190.82% 190.82% at 50% 100%, rgba(254, 173, 15, 1) 0%, rgb(0 0 0 / 31%) 18.09%)",
       },
       colors: {
         border: "var(--border)",
