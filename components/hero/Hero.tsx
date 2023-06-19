@@ -20,7 +20,8 @@ function Hero({}: Props) {
           </H1>
           <P className=" max-w-3xl mx-auto text-center mb-6">
             Join the movement and shape the future of venture capitalist through
-            community driven togetherness with $XDAO tokens.
+            community driven togetherness with{" "}
+            <span className="font-bold">$XDAO </span> tokens.
           </P>
           {/* <div className="grid sm:px-6 sm:grid-cols-2 gap-4 py-6 max-w-xl mx-auto"> */}
           <m.button
@@ -54,8 +55,8 @@ function Tokenomics({}: Props) {
 
   return (
     <>
-      <div className="bg-[#201e29] w-full  ">
-        <div className="grid p-6  md:grid-cols-3 min-h-[15vh] gap-4 mx-auto max-w-screen-2xl md:p-4 md:px-6 md:py-6">
+      <div className="bg-[#181a21] w-full  ">
+        <div className="grid p-6  md:grid-cols-3 min-h-[15vh] gap-4 mx-auto max-w-screen-xl md:p-4 md:px-6 md:py-6">
           {tiles.map((tile) => (
             <div
               key={tile.id}
