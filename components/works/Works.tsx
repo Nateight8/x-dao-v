@@ -19,9 +19,9 @@ function Works({}: Props) {
         scrollTrigger: {
           trigger: ".first",
           // markers: true,
-          start: "top 30%",
-          end: "bottom 20%",
-          scrub: 2,
+          start: `top ${window.innerHeight * 0.3}px`,
+          end: `bottom ${window.innerHeight * 0.2}px`,
+          scrub: true,
           pin: ".card-last",
           invalidateOnRefresh: true,
         },
@@ -39,7 +39,10 @@ function Works({}: Props) {
 
   return (
     <div ref={main} className="relative  min-h-screen w-full my-[10rem]">
-      <div className="first z-30 h-[60vh] z-50 max-w-4xl left-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-1/2   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl">
+      <div
+        style={{ zIndex: 15 }}
+        className="first h-[60vh] z-50 max-w-4xl left-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-1/2   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl"
+      >
         <div className="max max-w-lg">
           <H2 className="text-3xl fo font-heading-two mb-4 ">
             Staking and Rewards
@@ -51,7 +54,10 @@ function Works({}: Props) {
           </P>
         </div>
       </div>
-      <div className="card-last scale-[95%] z-10 h-[60vh] z-50 max-w-4xl left-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-1/2   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl">
+      <div
+        style={{ zIndex: 10 }}
+        className="card-last scale-[95%] h-[60vh] z-50 max-w-4xl left-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-1/2   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl"
+      >
         <div className="max max-w-lg">
           <H2 className="text-3xl fo font-heading-two mb-4 ">Token Sales</H2>
           <P>
