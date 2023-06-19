@@ -14,7 +14,7 @@ const Header = (props: Props) => {
   //   console.log(isOpen);
 
   return (
-    <nav className="w-full bg-background fixed top-0 z-50">
+    <nav className="w-full bg-background   fixed top-0 z-50 ">
       <div className="mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6 relative ">
         <div className="">
           <div className=" items-center hidden lg:flex justify-between">
@@ -30,7 +30,20 @@ const Header = (props: Props) => {
           <div className="flex lg:hidden items-center justify-between relative">
             <H2 className="">VX DAO </H2>
 
-            <Hamburger toggled={isOpen} toggle={setOpen} />
+            <div className="flex space-x-1 items-center">
+              <Button size="sm" className="" variant="ghost">
+                Connect
+              </Button>
+              <div
+                className={buttonVariants({
+                  variant: "ghost",
+                  className: "w-fit px-2",
+                  size: "sm",
+                })}
+              >
+                <Hamburger toggled={isOpen} toggle={setOpen} />
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -18,28 +18,22 @@ function Hero({}: Props) {
           <H1 className="md:mb-3 text-center">
             Revolutionalize your investment
           </H1>
-          <P className=" max-w-3xl mx-auto text-center ">
+          <P className=" max-w-3xl mx-auto text-center mb-6">
             Join the movement and shape the future of venture capitalist through
             community driven togetherness with $XDAO tokens.
           </P>
-          <div className="grid sm:px-6 sm:grid-cols-2 gap-4 py-6 max-w-xl mx-auto">
-            <m.button
-              // style={{
-
-              // }}
-              // whileHover={{ background: "" }}
-              className={buttonVariants({
-                variant: "ghost",
-                className: "w-full ",
-              })}
-            >
-              Create Wallet
-            </m.button>
-            <Button className="w-full">Connect Wallet</Button>
-            {/* <div className="se self-center">
-              <P>Don&lsquo;t have a wallet? Create One</P>
-            </div> */}
-          </div>
+          {/* <div className="grid sm:px-6 sm:grid-cols-2 gap-4 py-6 max-w-xl mx-auto"> */}
+          <m.button
+            className={buttonVariants({
+              variant: "ghost",
+              size: "lg",
+              // className: "my-6",
+            })}
+          >
+            Create Wallet
+          </m.button>
+          {/* <Button className="w-full">Connect Wallet</Button> */}
+          {/* </div> */}
         </div>
       </div>
       <Tokenomics />
@@ -58,13 +52,6 @@ function Tokenomics({}: Props) {
 
   const [count, setcount] = useState(0);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setcount((e) => e + 1);
-  //   }, 100);
-  //   return () => clearInterval(interval);
-  // }, []);
-
   return (
     <>
       <div className="bg-[#201e29] w-full  ">
@@ -74,17 +61,15 @@ function Tokenomics({}: Props) {
               key={tile.id}
               className="flex items-center justify-center flex-col space-y-1 p-6"
             >
-              <AnimatePresence>
-                <m.div exit={{ y: 300 }}>
-                  <H1>{tile.amount}</H1>
-                </m.div>
-              </AnimatePresence>
+              <m.div exit={{ y: 300 }}>
+                <H1>{tile.amount}</H1>
+              </m.div>
+
               <P>{tile.label}</P>
             </div>
           ))}
         </div>
       </div>
-      {/* <Build /> */}
     </>
   );
 }
@@ -95,9 +80,9 @@ function LinkToDocs() {
       href="/"
       className=" my-6 opacity-75 hover:opacity-100 transition-all ease-in-out flex items-center gap-x-2 text-left tracking-wider w-fit bg-radial-gradient-default px-5 py-1 rounded-full border border-border"
     >
-      <P className="text-base"> Litepaper</P>
+      <P className="text-sm"> Litepaper</P>
       <div className="h-[3px] w-[3px] rounded-full bg-primary" />
-      <P className="text-base"> Read the Docs</P>
+      <P className="text-sm"> Read the Docs</P>
       <svg
         width="10"
         height="9"

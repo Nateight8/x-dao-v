@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <Build />
       <Works />
-      <div className="h-[300vh] w-full" />
+      <div className="h-[100vh] w-full" />
     </main>
   );
 }
