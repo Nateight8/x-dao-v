@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         heading: "var(--heading)",
         "heading-two": "var(--heading-two)",
+        neue: "var(--neue)",
       },
       backgroundImage: {
         "radial-gradient-default":

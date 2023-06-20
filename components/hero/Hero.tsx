@@ -13,10 +13,10 @@ function Hero({}: Props) {
   return (
     <>
       <div className="flex-col w-full min-h-screen flex items-center justify-center mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6">
-        <div className="space-y-3 md:space-y-6 py-20 flex items-center justify-center flex-col">
+        <div className="space-y-3 max-w-md md:space-y-6 py-20 flex items-center justify-center flex-col">
           <LinkToDocs />
-          <H1 className="md:mb-3 text-center">
-            Revolutionalize your investment
+          <H1 size="large" className="md:mb-3 text-center">
+            Revolutionalize your Investment
           </H1>
           <P className=" max-w-3xl mx-auto text-center mb-6">
             Join the movement and shape the future of venture capitalist through
@@ -66,7 +66,7 @@ function Tokenomics({}: Props) {
                 <H1>{tile.amount}</H1>
               </m.div>
 
-              <P>{tile.label}</P>
+              <P size="large">{tile.label}</P>
             </div>
           ))}
         </div>

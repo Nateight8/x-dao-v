@@ -6,6 +6,7 @@ const h1Variants = cva(" font-heading ", {
   variants: {
     size: {
       default: "text-2xl md:text-4xl",
+      large: "text-3xl sm:text-5xl md:text-6xl lg:7xl",
     },
   },
   defaultVariants: {
