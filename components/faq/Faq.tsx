@@ -28,9 +28,9 @@ function Faq() {
   ];
 
   return (
-    <div className="h-screen w-full flex items-center justify-center">
-      <div className="grid md:grid-cols-3 w-full gap-3 max-w-3xl min-h-screen">
-        <div className="p-4 space-y-2">
+    <section className="h-screen w-full flex items-center justify-center">
+      <div className="grid md:grid-cols-3 px-4 w-full gap-6 max-w-3xl md:min-h-screen">
+        <div className=" md:p-4 space-y-2">
           <H2>Frequently Asked Questions</H2>
           <P>
             Have a question that is not answered? you are invited to join us on
@@ -38,27 +38,27 @@ function Faq() {
           </P>
         </div>
         <div className="col-start-2 col-span-full">
-          <Accordion type="single" collapsible>
-            <div className="space-y-2">
-              {faq.map((qes) => (
-                <AccordionItem key={qes.id} value={qes.id}>
-                  <AccordionTrigger>{qes.quest}</AccordionTrigger>
-                  <AccordionContent>
-                    <P className="text-base">
-                      Yes. It adheres to the WAI-ARIA design pattern. Lorem,
-                      ipsum dolor sit amet consectetur adipisicing elit. Minus
-                      quisquam odio consequatur. Ab, commodi sint dolorem
-                      provident quisquam unde aliquam aut! Maiores beatae rem et
-                      fuga magni sapiente recusandae. Maiores.
-                    </P>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </div>
+          <Accordion type="single" collapsible className="w-full">
+            {/* <div className="space-y-2"> */}
+            {faq.map((qes) => (
+              <AccordionItem key={qes.id} value={qes.id} className="my-2">
+                <AccordionTrigger>{qes.quest}</AccordionTrigger>
+                <AccordionContent>
+                  <P className="text-base">
+                    Yes. It adheres to the WAI-ARIA design pattern. Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Minus quisquam
+                    odio consequatur. Ab, commodi sint dolorem provident
+                    quisquam unde aliquam aut! Maiores beatae rem et fuga magni
+                    sapiente recusandae. Maiores.
+                  </P>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+            {/* </div> */}
           </Accordion>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
