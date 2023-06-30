@@ -4,6 +4,7 @@ import { H2 } from "../ui/h2";
 import { P } from "../ui/paragraph";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { H1 } from "../ui/h1";
 
 gsap.registerPlugin(ScrollTrigger);
 type Props = {};
@@ -18,7 +19,11 @@ function Works({}: Props) {
   ];
 
   return (
-    <section className="w-full">
+    <section className="w-full my-[10rem]">
+      <div className="w-full flex items-center justify-center">
+        <H1 className="text-center max-w-lg">Why Choose VentureX DAO?</H1>
+      </div>
+
       <SmallScreen />
       <BigScreen />
     </section>
@@ -31,16 +36,16 @@ function BigScreen() {
   const main = useRef(null);
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.to(".card-last", {
+      gsap.to(".second", {
         scale: 1,
         opacity: 1,
         scrollTrigger: {
           trigger: ".first",
           // markers: true,
-          start: `top 30%`,
-          end: `bottom 20%`,
+          start: `top 230vh`,
+          end: `bottom 200vh`,
           scrub: true,
-          pin: ".card-last",
+          pin: ".second",
           invalidateOnRefresh: true,
         },
       });
@@ -50,31 +55,46 @@ function BigScreen() {
   }, []);
 
   return (
-    <div
-      ref={main}
-      className="relative hidden lg:block  min-h-screen w-full my-[10rem]"
-    >
+    <div ref={main} className="relative hidden lg:block  min-h-screen w-full ">
       <div
         style={{ zIndex: 15 }}
         className="first h-[60vh] z-50 max-w-4xl left-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-1/2   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl"
       >
         <div className="max max-w-lg">
           <H2 className="text-3xl fo font-heading-two mb-4 ">
-            Staking and Rewards
+            Community-Centric Approach
           </H2>
           <P>
-            Participate in our staking program and earn rewards in the form of
-            VentureX tokens, which can be used for investments or traded on
-            supported exchanges.
+            At VentureX DAO, community is at the heart of everything we do. We
+            foster an inclusive environment that encourages active
+            participation, idea sharing, and collaboration among our diverse
+            community members. Participate in our staking program and earn
+            rewards in the form of VentureX tokens, which can be used for
+            investments or traded on supported exchanges.
           </P>
         </div>
       </div>
       <div
         style={{ zIndex: 10 }}
-        className="card-last scale-[90%] h-[60vh] z-50 max-w-4xl left-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-1/2   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl"
+        className="second scale-[90%] h-[60vh] z-50 max-w-4xl left-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-1/2   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl"
       >
         <div className="max max-w-lg">
-          <H2 className="text-3xl fo font-heading-two mb-4 ">Token Sales</H2>
+          <H2 className="text-3xl fo font-heading-two mb-4 ">
+            Lifetime DAO Benefits
+          </H2>
+          <P>
+            Our Early Supporter NFT offers unique lifetime DAO benefits that
+            provide exclusive privileges and opportunities for early adopters.
+            Join us now to unlock a world of rewards and recognition.
+          </P>
+        </div>
+      </div>
+      <div
+        style={{ zIndex: 5 }}
+        className="third scale-[90%] h-[60vh] z-50 max-w-4xl left-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-1/2   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl"
+      >
+        <div className="max max-w-lg">
+          <H2 className="text-3xl fo font-heading-two mb-4 ">Third Card</H2>
           <P>
             Get access to exclusive token sales of handpicked projects vetted by
             our expert team, offering early-stage investment opportunities with
@@ -88,7 +108,7 @@ function BigScreen() {
 
 function SmallScreen() {
   return (
-    <div className="my-[10rem] space-y-3 p-4 w-full flex flex-col items-center justify-center lg:hidden">
+    <div className="space-y-3 p-4 w-full flex flex-col items-center justify-center lg:hidden">
       <div className="h-[60vh] max-w-4xl  w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl">
         <div className="max max-w-lg">
           <H2 className="text-3xl fo font-heading-two mb-4 ">
@@ -98,6 +118,16 @@ function SmallScreen() {
             Participate in our staking program and earn rewards in the form of
             VentureX tokens, which can be used for investments or traded on
             supported exchanges.
+          </P>
+        </div>
+      </div>
+      <div className="h-[60vh] max-w-4xl   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl">
+        <div className="max max-w-lg">
+          <H2 className="text-3xl fo font-heading-two mb-4 ">Token Sales</H2>
+          <P>
+            Get access to exclusive token sales of handpicked projects vetted by
+            our expert team, offering early-stage investment opportunities with
+            high growth potential.
           </P>
         </div>
       </div>

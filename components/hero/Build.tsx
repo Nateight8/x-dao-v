@@ -7,8 +7,8 @@ type Props = {};
 function Build({}: Props) {
   return (
     <>
-      <div className="flex w-full min-h-screen items-center mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6">
-        <div className="max max-w-lg">
+      <div className="flex w-full min-h-screen items-center max-w-6xl mx-auto p-4 md:px-6 md:py-6">
+        <div className=" max-w-lg">
           <H1>Build your investment</H1>
           <P>
             Build your assets by procuring $XDAO tokens . Be among the first

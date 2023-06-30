@@ -16,12 +16,13 @@ function Hero({}: Props) {
         <div className="space-y-3 max-w-md md:space-y-6 py-20 flex items-center justify-center flex-col">
           <LinkToDocs />
           <H1 size="large" className="md:mb-3 text-center">
+            {/* <span> Build.</span> Collaborate. Innovate. */}
             Revolutionalize your Investment
           </H1>
           <P className=" max-w-3xl mx-auto text-center mb-6">
-            Join the movement and shape the future of venture capitalist through
-            community driven togetherness with{" "}
-            <span className="font-bold">$XDAO </span> tokens.
+            Join the Next-Generation Decentralized Autonomous Organization and
+            shape the future of venture capitalist through community driven
+            togetherness with <span className="font-bold">$XDAO </span> tokens.
           </P>
           {/* <div className="grid sm:px-6 sm:grid-cols-2 gap-4 py-6 max-w-xl mx-auto"> */}
           <m.button
@@ -55,7 +56,19 @@ function Tokenomics({}: Props) {
 
   return (
     <>
-      <div className="bg-[#181a21] w-full  ">
+      <div
+        style={{
+          width: "100%",
+          // height: "1px",
+          maxWidth: "1200px",
+          backgroundImage:
+            "linear-gradient(90deg,rgba(71,71,65,0),#2C313A 50%,rgba(71,71,65,0))",
+          marginBottom: "160px",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+        // className="bg-[#181a21] w-full  "
+      >
         <div className="grid p-6  md:grid-cols-3 min-h-[15vh] gap-4 mx-auto max-w-screen-xl md:p-4 md:px-6 md:py-6">
           {tiles.map((tile) => (
             <div

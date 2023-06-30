@@ -6,6 +6,7 @@ const h2Variants = cva(" font-heading text-slate-100", {
   variants: {
     size: {
       default: "text-xl",
+      sm: "text-sm",
     },
   },
   defaultVariants: {
