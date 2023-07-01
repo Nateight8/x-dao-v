@@ -25,7 +25,7 @@ function Hero({}: Props) {
             togetherness with <span className="font-bold">$XDAO </span> tokens.
           </P>
           {/* <div className="grid sm:px-6 sm:grid-cols-2 gap-4 py-6 max-w-xl mx-auto"> */}
-          <m.button
+          {/* <m.button
             className={buttonVariants({
               variant: "ghost",
               size: "lg",
@@ -33,7 +33,7 @@ function Hero({}: Props) {
             })}
           >
             Create Wallet
-          </m.button>
+          </m.button> */}
           {/* <Button className="w-full">Connect Wallet</Button> */}
           {/* </div> */}
         </div>

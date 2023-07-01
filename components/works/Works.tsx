@@ -111,33 +111,39 @@ function SmallScreen() {
     <div className="space-y-3 p-4 w-full flex flex-col items-center justify-center lg:hidden">
       <div className="h-[60vh] max-w-4xl  w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl">
         <div className="max max-w-lg">
-          <H2 className="text-3xl fo font-heading-two mb-4 ">
-            Staking and Rewards
+          <H2 className="text-3xl font-heading-two mb-4 ">
+            Community-Centric Approach
           </H2>
           <P>
-            Participate in our staking program and earn rewards in the form of
-            VentureX tokens, which can be used for investments or traded on
-            supported exchanges.
+            At VentureX DAO, community is at the heart of everything we do. We
+            foster an inclusive environment that encourages active
+            participation, idea sharing, and collaboration among our diverse
+            community members
           </P>
         </div>
       </div>
       <div className="h-[60vh] max-w-4xl   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl">
         <div className="max max-w-lg">
-          <H2 className="text-3xl fo font-heading-two mb-4 ">Token Sales</H2>
+          <H2 className="text-3xl fo font-heading-two mb-4 ">
+            Lifetime DAO Benefits
+          </H2>
           <P>
-            Get access to exclusive token sales of handpicked projects vetted by
-            our expert team, offering early-stage investment opportunities with
-            high growth potential.
+            Our Early Supporter NFT offers unique lifetime DAO benefits that
+            provide exclusive privileges and opportunities for early adopters.
+            Join us now to unlock a world of rewards and recognition.
           </P>
         </div>
       </div>
       <div className="h-[60vh] max-w-4xl   w-full flex items-center  bg-background shadow-lg p-6 shadow-black/40 border border-slate-100/10 rounded-xl">
         <div className="max max-w-lg">
-          <H2 className="text-3xl fo font-heading-two mb-4 ">Token Sales</H2>
+          <H2 className="text-3xl fo font-heading-two mb-4 ">
+            Innovative Solutions
+          </H2>
           <P>
-            Get access to exclusive token sales of handpicked projects vetted by
-            our expert team, offering early-stage investment opportunities with
-            high growth potential.
+            VentureX DAO is committed to pushing the boundaries of decentralized
+            innovation. By harnessing the collective intelligence of our
+            community, we develop cutting-edge solutions and drive forward the
+            adoption of blockchain technology.
           </P>
         </div>
       </div>

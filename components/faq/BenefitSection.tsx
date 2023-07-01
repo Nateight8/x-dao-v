@@ -5,7 +5,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../components/ui/accordion";
+} from "../ui/accordion";
 import { P } from "../ui/paragraph";
 import { H2 } from "../ui/h2";
 import { H1 } from "../ui/h1";
@@ -14,9 +14,11 @@ import { faq } from "@/lib/utils/Faq";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Benefits from "../benefits/Benefits";
 
 gsap.registerPlugin(ScrollTrigger);
-function Faq() {
+
+function BenefitSection() {
   const main = useRef(null);
 
   useLayoutEffect(() => {
@@ -27,7 +29,8 @@ function Faq() {
         scrollTrigger: {
           pin: ".faq",
           // markers: true,
-          start: "top 100vh",
+          start: "top 95vh",
+          end: "bottom 80%",
           scrub: true,
         },
       });
@@ -38,37 +41,15 @@ function Faq() {
 
   return (
     <div ref={main} className="relative min-h-[200vh] p-4">
-      <section className="min-h-screen w-full absolute top-0 flex items-center justify-center">
-        <div className="faq grid md:grid-cols-3  w-full gap-6 max-w-3xl md:min-h-screen">
-          <div className=" md:p-4 space-y-2">
-            <H2>Frequently Asked Questions</H2>
-            <P>
-              Have a question that is not answered? you are invited to join us
-              on discord
-            </P>
-          </div>
-          <div className="col-start-2 col-span-full">
-            <Accordion type="single" collapsible className="w-full">
-              {/* <div className="space-y-2"> */}
-              {faq.map((qes) => (
-                <AccordionItem key={qes.id} value={qes.id} className="my-2">
-                  <AccordionTrigger>{qes.quest}</AccordionTrigger>
-                  <AccordionContent>
-                    <P className="text-base whitespace-pre-line">{qes.ans}</P>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-              {/* </div> */}
-            </Accordion>
-          </div>
-        </div>
-      </section>
+      <div className=" w-full  absolute top-0 faq">
+        <Benefits />
+      </div>
       <Mint />
     </div>
   );
 }
 
-export default Faq;
+export default BenefitSection;
 
 function Mint() {
   return (
