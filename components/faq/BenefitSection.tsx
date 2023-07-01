@@ -40,12 +40,18 @@ function BenefitSection() {
   }, []);
 
   return (
-    <div ref={main} className="relative min-h-[200vh] p-4">
-      <div className=" w-full  absolute top-0 faq">
-        <Benefits />
+    <>
+      <div ref={main} className="relative min-h-[200vh] p-4 hidden lg:block">
+        <div className=" w-full  absolute top-0 faq">
+          <Benefits />
+        </div>
+        <Mint />
       </div>
-      <Mint />
-    </div>
+      <div className="relative min-h-[300vh] p-4 lg:hidden ">
+        <Benefits />
+        <Mint />
+      </div>
+    </>
   );
 }
 
@@ -53,16 +59,13 @@ export default BenefitSection;
 
 function Mint() {
   return (
-    <div className="min-h-screen bg-background w-full absolute top-[100vh] ">
+    <div className="min-h-screen bg-background w-full absolute top-[180vh] lg:top-[100vh] ">
       <Divider />
-      <div className="flex w-full relative items-start max-w-6xl mx-auto p-4 md:px-6 md:py-6">
+      <div className="flex min-h-[70vh] w-full relative items-center max-w-6xl mx-auto p-4 md:px-6 md:py-6">
         <div className="">
           <div className=" mb-6 max-w max-w-lg">
             <H1 className="">Mint Your Exclusive NFT Pass</H1>
             <P className="">
-              {/* Showcases your commitment to VentureX DAO by minting the Limited
-              Edition NFT for Early Supporters and gain access to lifetime DAO
-              benefits */}
               Mint your exclusive Early Supporter NFT Pass and unlock lifetime
               DAO benefits.
             </P>
