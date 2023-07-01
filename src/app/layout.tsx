@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={`${body.className} ${heading.variable} ${headTwo.variable} ${neue.variable} overflow-x-hidden`}
       >
-        {/* <Header /> */}
+        <Header />
         {children}
 
         <Footer />
