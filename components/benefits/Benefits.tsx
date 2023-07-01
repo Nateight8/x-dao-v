@@ -22,13 +22,14 @@ function Benefits({}: Props) {
             {benefits.map((ben) => (
               <div
                 key={ben.id}
-                className="border hover:cursor shadow-md lg:shadow-xl shadow-black/40 border-slate-100/10 flex items-end p-4 rounded-xl min-h-[15rem]"
+                className="border relative hover:cursor shadow-md lg:shadow-xl shadow-black/40 border-slate-100/10 flex items-end p-4 rounded-xl min-h-[15rem]"
               >
+                <div className="absolute inset-0 bg-transparent cursor-pointer" />
                 <div className="space-y-2 max-w-md">
-                  <H2 className=" select-none" size={"sm"}>
+                  <H2 className=" " size={"sm"}>
                     {ben.title}
                   </H2>
-                  <P className="text-sm select-none">{ben.details}</P>
+                  <P className="text-sm ">{ben.details}</P>
                 </div>
               </div>
             ))}
