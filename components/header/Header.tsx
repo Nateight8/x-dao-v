@@ -65,6 +65,11 @@ function Navlinks() {
       id: "s",
     },
     {
+      label: "Explore",
+      url: "/explore",
+      id: "Sa",
+    },
+    {
       label: "About",
       url: "/about",
       id: "Sa",
