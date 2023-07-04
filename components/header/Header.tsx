@@ -31,18 +31,18 @@ const Header = (props: Props) => {
             <H2 className="">VX DAO </H2>
 
             <div className="flex space-x-1 items-center">
-              <Button size="sm" className="" variant="ghost">
+              {/* <Button size="sm" className="" variant="ghost">
                 Connect
-              </Button>
-              <div
+              </Button> */}
+              {/* <div
                 className={buttonVariants({
                   variant: "ghost",
                   className: "w-fit px-2",
                   size: "sm",
                 })}
-              >
-                <Hamburger toggled={isOpen} toggle={setOpen} />
-              </div>
+              > */}
+              <Hamburger toggled={isOpen} toggle={setOpen} />
+              {/* </div> */}
             </div>
           </div>
         </div>
