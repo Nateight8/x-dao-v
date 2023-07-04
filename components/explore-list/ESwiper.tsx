@@ -48,7 +48,7 @@ function ESwiper({}: Props) {
           }}
         >
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
-            <SwiperSlide key={item} className="p-2">
+            <SwiperSlide key={item} className="p-3">
               <ExploreCard />
             </SwiperSlide>
           ))}
