@@ -21,9 +21,9 @@ function ExploreCard({}: Props) {
         /> */}
           <div className="bg-red-100/5 w-full h-full  rounded"></div>
         </div>
-        <div className="p-1">
-          <H2 className="text text-sm mb-2">JohnyDao</H2>
-          <div className="grid grid-cols-2 gap-2">
+        <div className="p-3">
+          <H2 className="text text-sm">Name of Project</H2>
+          <div className="grid grid-cols-2 gap-2 py-3">
             <div className="">
               <P>Invested</P>
               <P className="font-heading">75 Eth</P>
