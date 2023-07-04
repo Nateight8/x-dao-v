@@ -19,7 +19,7 @@ function ESwiper({}: Props) {
       <div className="w-full">
         <div className="flex w-full items-end justify-between  mx-auto p-4 md:px-6 md:py-6">
           <div className=" max-w-lg">
-            <H1>Investments Overview</H1>
+            <H1>Investment Performance</H1>
             <P>
               Gain insights into the performance of each project and track the
               growth of your holdings.

@@ -11,7 +11,7 @@ type Props = {};
 function ExploreCard({}: Props) {
   return (
     <Link href="/explore/project">
-      <div className="min-h-[16.7rem] relative rounded-md border border-slate-100/10 hover:border-slate-100/30 hover:cursor-pointer ">
+      <div className="min-h-[16.7rem] relative rounded-md border border-slate-100/10 transition-all duration-1000 hover:border-slate-100/30 hover:cursor-pointer ">
         <div className="bg-muted h-[14.7rem] p-1 rounded overflow-hidden">
           {/* <Image
           src=""
