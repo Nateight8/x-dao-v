@@ -30,7 +30,7 @@ function ESwiper({}: Props) {
           </Link>
         </div>
         <Swiper
-          className="w-full px-3"
+          className="w-full px-3 md:px-2"
           slidesPerView={1.3}
           breakpoints={{
             640: {
@@ -38,10 +38,14 @@ function ESwiper({}: Props) {
               // spaceBetween: 16,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               // spaceBetween: 16,
             },
             1024: {
+              slidesPerView: 3.5,
+              // spaceBetween: 16,
+            },
+            1400: {
               slidesPerView: 6,
               // spaceBetween: 16,
             },
