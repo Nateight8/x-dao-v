@@ -30,7 +30,7 @@ function ExploreCard({}: Props) {
             </div>
             <div className="">
               <P>Currently at</P>
-              <P className="font-heading">+125 Eth</P>
+              <P className="font-heading">+125</P>
             </div>
           </div>
         </div>

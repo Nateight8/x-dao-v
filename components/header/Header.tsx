@@ -79,6 +79,11 @@ function Navlinks() {
       url: "/resources",
       id: "Sa",
     },
+    {
+      label: "Mint",
+      url: "/mint",
+      id: "mint",
+    },
   ];
 
   const pathname = usePathname();

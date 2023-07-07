@@ -7,6 +7,7 @@ import BenefitSection from "../../components/faq/BenefitSection";
 import FreqAQ from "../../components/faq/FreqAQ";
 import ESwiper from "../../components/explore-list/ESwiper";
 import Team from "../../components/team/Team";
+import { TeamCard } from "../../components/ui/team-card";
 
 export default function Home() {
   return (
