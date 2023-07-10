@@ -48,9 +48,11 @@ const Header = (props: Props) => {
         </div>
       </div>
       <div
-        className={`h-screen w-full  absolute z-30 p-4 border-t bg-background `}
+        className={`h-screen w-full  absolute z-30 py-10 border-t bg-background `}
         style={!isOpen ? { display: "none" } : { display: "block" }}
-      ></div>
+      >
+        <Navlinks />
+      </div>
     </nav>
   );
 };
@@ -89,7 +91,7 @@ function Navlinks() {
   const pathname = usePathname();
 
   return (
-    <ul className="flex items-center">
+    <ul className=" lg:flex items-center">
       {links.map((link) => (
         <li key={link.id}>
           <Link
