@@ -20,7 +20,7 @@ function Works({}: Props) {
           <Separator className="w-[3rem]" />
         </div>
         <div className="max-w-3xl mx-auto">
-          <H1 className="text-center ">
+          <H1 className="text-center text-base sm:text-2xl ">
             Embrace the Potential of VentureX DAO & be a Part of an Investment
             Revolution
           </H1>
