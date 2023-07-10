@@ -16,7 +16,7 @@ function Benefits({}: Props) {
   return (
     <>
       <section className="w-full p-4 min-h-screen md:p-6 my-[10vh] md:mb-[20vh] md:mt-0 ">
-        <div className="lg:flex w-full lg:items-end lg:justify-between  mx-auto py-8  ">
+        <div className="lg:flex w-full lg:items-end lg:justify-between  mx-auto py-8 mb-8 ">
           <div className=" max-w-lg">
             <div className="flex items-center space-x-4 py-2">
               <Separator className="w-[3rem]" />
@@ -26,7 +26,7 @@ function Benefits({}: Props) {
             </div>
             <H1>Exciting Benefits Await You</H1>
           </div>
-          <P className="max-w-md">
+          <P className="max-w-md hidden lg:block">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
             nisi! Lorem ipsum dolor sit amet
           </P>

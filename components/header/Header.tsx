@@ -100,7 +100,9 @@ function Navlinks() {
                 ? { color: "white" }
                 : { color: "rgba(225, 224, 232, 0.4)" }
             }
-            className={buttonVariants({ variant: "link" })}
+            className={buttonVariants({
+              variant: "link",
+            })}
             href={link.url}
           >
             {link.label}

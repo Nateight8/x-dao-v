@@ -12,8 +12,8 @@ type Props = {};
 
 function Works({}: Props) {
   return (
-    <section className="w-full my-[10rem] pb-[100vh] pt-6">
-      <div className="header my-10">
+    <section className="w-full my-[10rem] lg:pb-[100vh] pt-6">
+      <div className="header my-10 px-4">
         <div className="w-full flex items-center justify-center mb-4">
           <Separator className="w-[3rem]" />
           <P className="text-center max-w-lg uppercase mx-1">Why Choose Us</P>
@@ -21,8 +21,8 @@ function Works({}: Props) {
         </div>
         <div className="max-w-3xl mx-auto">
           <H1 className="text-center ">
-            Some Lorem ipsum dolor text. Re-inforcing Why visitors should join
-            the DAO Few lines required so as not to break the layout
+            Embrace the Potential of VentureX DAO & be a Part of an Investment
+            Revolution
           </H1>
         </div>
       </div>
