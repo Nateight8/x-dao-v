@@ -21,8 +21,8 @@ function Works({}: Props) {
         </div>
         <div className="max-w-3xl mx-auto">
           <H1 className="text-center ">
-            Some Lorem ipsum dolor text. Re-inforcing Why to join the DAO Few
-            lines required so as not to break the layout
+            Some Lorem ipsum dolor text. Re-inforcing Why visitors should join
+            the DAO Few lines required so as not to break the layout
           </H1>
         </div>
       </div>
