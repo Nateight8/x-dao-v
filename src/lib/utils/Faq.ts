@@ -25,31 +25,32 @@ export const faq = [
 export const benefits = [
   {
     id: "aa",
-    title: "Governance",
-    details: "Have a say in the decision-making process of VentureX DAO.",
+    title: "Governance Voting Power",
+    details:
+      "Have a say in the decision-making process of VentureX DAO. Your vote matters, and together, we shape the future of our community",
   },
   {
     id: "a2",
-    title: "Rewards",
+    title: "Profit Sharing",
     details:
-      "Contribute to the DAO's success and be rewarded with royalties and profit sharing",
+      "Participate in the success of the DAO by receiving royalties and profit sharing from all DAO investments. Your contributions are rec ognized and rewarded.",
   },
   {
     id: "aa3",
-    title: "Token Allocations",
+    title: "Shared Token Allocations",
     details:
-      "As an Early Supporter, you gain shared allocation of 1,500,000 $XDAO tokens on launch.",
+      "As an Early Supporter, you gain shared allocation of 1,500,000 $XDAO tokens on launch, providing you with a stake in the success of our ecosystem.      ",
   },
-  // {
-  //   id: "aa4",
-  //   title: " Special Discord Role & Channel",
-  //   details:
-  //     "Enjoy exclusive monthly giveaways designed to reward our dedicated community members. Stay engaged and stand a chance to win exciting rewards.      ",
-  // },
   {
-    id: "aa5",
-    title: "Airdrops",
+    id: "aa3",
+    title: "Monthly Giveaways",
     details:
-      "Enjoy exclusive monthly airdrops designed to reward dedicated community members.",
+      " Enjoy exclusive monthly giveaways designed to reward our dedicated community members. Stay engaged and stand a chance to win exciting rewards.",
+  },
+  {
+    id: "aa4",
+    title: " Special Discord Role & Channel",
+    details:
+      "Enjoy exclusive monthly giveaways designed to reward our dedicated community members. Stay engaged and stand a chance to win exciting rewards.      ",
   },
 ];

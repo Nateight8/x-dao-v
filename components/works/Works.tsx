@@ -5,25 +5,27 @@ import { P } from "../ui/paragraph";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { H1 } from "../ui/h1";
+import { Separator } from "../ui/separator";
 
 gsap.registerPlugin(ScrollTrigger);
 type Props = {};
 
 function Works({}: Props) {
-  const topPossition = 5;
-
-  const cardArray = [
-    { id: "w", name: "card one" },
-    { id: "we", name: "card two" },
-    { id: "wea", name: "card three" },
-  ];
-
   return (
-    <section className="w-full my-[10rem]">
-      <div className="w-full flex items-center justify-center">
-        <H1 className="text-center max-w-lg">Why Choose VentureX DAO?</H1>
+    <section className="w-full my-[10rem] pb-[100vh] pt-6">
+      <div className="header my-10">
+        <div className="w-full flex items-center justify-center mb-4">
+          <Separator className="w-[3rem]" />
+          <P className="text-center max-w-lg uppercase mx-1">Why Choose Us</P>
+          <Separator className="w-[3rem]" />
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <H1 className="text-center ">
+            Some Lorem ipsum dolor text. Re-inforcing Why to join the DAO Few
+            lines required so as not to break the layout
+          </H1>
+        </div>
       </div>
-
       <SmallScreen />
       <BigScreen />
     </section>

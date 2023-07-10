@@ -41,14 +41,13 @@ function BenefitSection() {
 
   return (
     <>
-      <div ref={main} className="relative min-h-[200vh] p-4 hidden lg:block">
+      {/* <div ref={main} className="relative min-h-[200vh] p-4 hidden lg:block">
         <div className=" w-full  absolute top-0 faq">
           <Benefits />
         </div>
         <Mint />
-      </div>
+      </div> */}
       <div className="relative min-h-[300vh] p-4 lg:hidden ">
-        <Benefits />
         <Mint />
       </div>
     </>

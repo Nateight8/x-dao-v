@@ -55,7 +55,7 @@ function Team({}: Props) {
   //       <RightAligned name="Layla Davis" img="/p3.jpg" />
   //       <RightAligned name="Arjun Rao" img="/pixs.jpg" />
   return (
-    <div ref={container} className="min-h-screen  w-full p-4 my-6">
+    <div ref={container} className="min-h-screen  w-full p-4 my-[30vh]">
       <div className=" max-w-lg my-6">
         <H1>Meet the Team</H1>
         <P>

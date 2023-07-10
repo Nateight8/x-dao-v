@@ -14,7 +14,7 @@ const Header = (props: Props) => {
   //   console.log(isOpen);
 
   return (
-    <nav className="w-full bg-background   fixed top-0 z-50 ">
+    <nav className="w-full bg-background/20  fixed top-0 z-50 ">
       <div className="mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6 relative ">
         <div className="">
           <div className=" items-center hidden lg:flex justify-between">
